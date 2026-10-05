@@ -360,7 +360,7 @@
   async function initSync() {
     if (typeof SYNC === "undefined" || typeof CRYPTO === "undefined") return;
     const cfg = window.SUPABASE_CONFIG;
-    if (!cfg || !cfg.url || !cfg.anonKey) { setSyncStatus("sync não configurado", "off"); return; }
+    if (!cfg || !cfg.url || !cfg.anonKey) { setSyncStatus("neste dispositivo", "off"); return; }
     try {
       setSyncStatus("conectando…", "off");
       await esperarSb();

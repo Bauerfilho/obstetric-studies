@@ -1,5 +1,17 @@
 # Anamnese Enfermaria — Obstetrícia
 
+## Cópia de trabalho · Obstetric Studies
+
+Repositório de trabalho: [Bauerfilho/obstetric-studies](https://github.com/Bauerfilho/obstetric-studies).
+Importado integralmente de [anamnese-enfermaria-obstetricia](https://github.com/Bauerfilho/anamnese-enfermaria-obstetricia), commit `c629c5aecc0353f03578af57fcc463f2a1a5ff44`.
+O commit de importação preserva os 28 arquivos originais; o repositório de origem e seu histórico continuam disponíveis.
+
+Nesta cópia, a conexão com o Supabase original está **desativada**. Questionários, modelos, login original, temas, saída editável e histórico local foram preservados. As descrições de sincronização abaixo documentam o recurso original; ele exige configuração de uma base dedicada antes de ser reativado aqui.
+
+Publicação estática: `node scripts/build-static.mjs` prepara `dist/` com os arquivos públicos. A identidade do Sites fica em `.openai/hosting.json`; não publicar a raiz inteira com documentação e ferramentas.
+
+Verificações locais: `node tools/simulate.js`, `node tools/check-vault.js`, `node tools/check-crypto.js`, `node tools/check-sync.js` e `node tools/check-modelos.js`. `tools/check.js` exige um arquivo interno não versionado; `tools/check-sync-real.js` acessa a base original e não deve ser executado para esta prévia.
+
 Calculadora de uso médico que transforma um questionário em **Anamnese / Evolução de Enfermaria de Obstetrícia**, no formato exato do template da preceptora. Você marca opções e completa campos; o documento é gerado ao vivo, na ordem certa, pronto para copiar.
 
 ## Por que existe

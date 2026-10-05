@@ -1,5 +1,5 @@
 /* sw.js — cache-first offline-first. Sem backend, sem envio de dados. */
-const CACHE = "anamnese-go-v4";
+const CACHE = "obstetric-studies-anamnese-v1";
 const ASSETS = [
   "./",
   "./index.html",

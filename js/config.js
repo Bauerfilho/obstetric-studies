@@ -11,7 +11,5 @@
    girada/revogada no painel do Supabase.
    ========================================================================== */
 
-window.SUPABASE_CONFIG = {
-  url: "https://riqdexhtnckiyhhoysqw.supabase.co",
-  anonKey: "sb_publishable_zD3B5vXUCrzJNubYUBb2-g_g0CF33SN"
-};
+/* Esta cópia usa somente histórico local. Reativar apenas com base dedicada. */
+window.SUPABASE_CONFIG = { url: "", anonKey: "" };
