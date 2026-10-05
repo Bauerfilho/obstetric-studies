@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Marca Isana">
+  <!--
+    Logo Isana — esculpida. Preto sobre fundo transparente.
+    Geometria medida do ícone de referência aprovado:
+      • dois anéis concêntricos (externo grosso, interno fino)
+      • losango 45° de cantos arredondados, sólido, ao centro
+      • estrelinha sparkle de 4 pontas (pontas longas e finas), FLUTUANTE acima
+    Acabamento: brilho branco-acinzentado no topo + sombra suave embaixo
+    (relevo) na estrela e no losango.
+  -->
+  <defs>
+    <!-- volume sutil: preto com leve variação -->
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2b30"/>
+      <stop offset="0.5" stop-color="#17171a"/>
+      <stop offset="1" stop-color="#0c0c0e"/>
+    </linearGradient>
+    <!-- relevo esculpido: brilho em cima, sombra embaixo -->
+    <filter id="relevo" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="-2.5" stdDeviation="2" flood-color="#ffffff" flood-opacity="0.4"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- anéis (sem relevo — traço limpo) -->
+  <g fill="none" stroke="url(#metal)" stroke-linecap="round">
+    <circle cx="256" cy="322" r="150" stroke-width="38"/>
+    <circle cx="256" cy="322" r="104" stroke-width="13"/>
+  </g>
+
+  <!-- losango central: quadrado 45° com cantos arredondados, sólido, com relevo -->
+  <g filter="url(#relevo)">
+    <path d="M256 246
+             Q262 246 266 250 L322 306 Q326 310 326 322
+             Q326 334 322 338 L266 394 Q262 398 256 398
+             Q250 398 246 394 L190 338 Q186 334 186 322
+             Q186 310 190 306 L246 250 Q250 246 256 246 Z"
+          fill="url(#metal)"/>
+  </g>
+
+  <!-- estrelinha flutuante: sparkle de 4 pontas, MENOR (proporção do ref: ~25%
+       da largura dos anéis) e FLUTUANTE (gap acima do anel externo, sem tocar).
+       Anel externo tem topo em cy-r-stroke/2 = 322-150-19 = 153. Estrela
+       centralizada em cy≈96, altura ~64, ponta inferior em ~128 → folga de 25. -->
+  <g filter="url(#relevo)">
+    <path d="M256 60
+             Q259 84 264 94
+             Q274 101 296 105
+             Q274 109 264 116
+             Q259 126 256 150
+             Q253 126 248 116
+             Q238 109 216 105
+             Q238 101 248 94
+             Q253 84 256 60 Z"
+          fill="url(#metal)"/>
+  </g>
+</svg>
